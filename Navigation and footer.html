@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+	margin:auto;
+	background-color:skyblue;
+	}
+
+li{
+	list-style-type:none;
+	display:inline-block;
+	font-style:italic;
+	}
+#a{
+	color:black;
+	padding:25px;
+	font-weight:bold;
+	text-decoration:none;
+	margin:auto;
+	}
+#a:hover
+	{
+		background-color:yellow;
+		border:1px solid red;
+		border-radius:10px;
+		}
+form
+	{
+		text-align:center;
+		font-style:italic;
+	}
+
+#b:hover{
+	background-color:red;
+	border:1px solid yellow;
+	}
+#c:hover
+	{
+		border:1px solid red;
+	}
+footer{
+	text-align:center;
+	margin-top:5px;
+	font-style:italic;
+	}
+#h{
+	text-align:center;
+	font-style:italic;
+	}
+.error{
+	color:red;
+	font-size:14px;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul >
+<center>
+<li id="a"> Home</li>
+<li id="a">Contact</li>
+<li id="a">About</li>
+</center>
+</ul>
+</nav>
+<h1 id="h">Register Your Id using Name And Mobile number</h1>
+<form method="get" onsubmit="return validation()">
+<label>First Name:</label>
+<input id="c" type="text" name="fname" placeholder="Enter your First name" required><br><br>
+<span id="er" class="error"></span><br><br>
+<label>Last Name:</label>
+<input id="c" type="text" name="lname" placeholder="Enter your Last name" required><br><br>
+<span id="er1" class="error"></span><br><br>
+<label>Mobile Number:</label>
+<input id="c" type="text" name="n" placeholder="Enter your Mobile number" required><br><br>
+<span id="er2" class="error"></span><br><br>
+<button id="b" type="Submit">Submit</button>
+</form>
+<footer>
+<h1>Thankyou For Using Me!!!!!</h1>
+<p>copyright &copy; 2025.</p>
+</footer>
+<script src="first.js"></script>
+</body>
+</html>
